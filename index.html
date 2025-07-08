@@ -17,51 +17,35 @@
     .video-grid iframe,
     .video-grid video {
       width: 300px;
-      height: 168.75px; /* 16:9 ratio */
+      height: 533px;
       border-radius: 12px;
     }
     .phone-number {
+      direction: ltr;
       text-align: center;
-      font-size: 1.2em;
+      font-weight: bold;
       margin: 10px 0;
     }
   </style>
 </head>
 <body>
-
-  <!-- زر الوضع الليلي -->
   <button id="toggleMode">🌓 تبديل الوضع</button>
 
-  <!-- رأس الصفحة -->
   <header>
     <img src="https://i.imgur.com/hXnoWXD.jpeg" alt="شعار قرقابو" class="logo" />
     <nav>
       <ul>
         <li><a href="#home" class="nav-btn active">🏠 الصفحة الرئيسية</a></li>
-        <li>
-          <a href="https://www.facebook.com/mostaganem.n27/about_details" target="_blank" class="nav-btn">
-            <img src="https://i.imgur.com/2vgm6if.png" class="icon" /> فيسبوك
-          </a>
-        </li>
-        <li>
-          <a href="https://www.tiktok.com/@karkabou_mostaganem_" target="_blank" class="nav-btn">
-            <img src="https://i.imgur.com/pFTXRZs.png" class="icon" /> تيك توك
-          </a>
-        </li>
-        <li>
-          <a href="#contact" class="nav-btn">📞 اتصل بنا</a>
-        </li>
+        <li><a href="https://www.facebook.com/mostaganem.n27/about_details" target="_blank" class="nav-btn"><img src="https://i.imgur.com/2vgm6if.png" class="icon" /> فيسبوك</a></li>
+        <li><a href="https://www.tiktok.com/@karkabou_mostaganem_" target="_blank" class="nav-btn"><img src="https://i.imgur.com/pFTXRZs.png" class="icon" /> تيك توك</a></li>
+        <li><a href="#contact" class="nav-btn">📞 اتصل بنا</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- الصفحة الرئيسية -->
   <section id="home" class="main-section">
+    <div class="phone-number">📞☎️ 07 95 46 81 27 ☎️📞</div>
 
-    <!-- رقم الهاتف في الأعلى -->
-    <div class="phone-number" dir="ltr">📞☎️ 07 95 46 81 27 ☎️📞</div>
-
-    <!-- صور الفرقة -->
     <div class="images">
       <img src="https://i.imgur.com/BKHLjZn.jpeg" alt="صورة جديدة 1" />
       <img src="https://i.imgur.com/SZeuweB.jpeg" alt="صورة جديدة 2" />
@@ -69,51 +53,34 @@
       <img src="https://i.imgur.com/Q981Emj.jpeg" alt="صورة جديدة 4" />
     </div>
 
-    <!-- فيديوهات الفرقة -->
     <div class="videos">
       <h2>🎥 فيديوهات من إبداع الفرقة</h2>
       <div class="video-grid">
-
-        <!-- فيديوهات فيسبوك -->
+        <!-- فيديوهات الفيسبوك -->
         <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/mostaganem.n27/videos/1300081968387198/&show_text=false&autoplay=false" allowfullscreen></iframe>
         <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/mostaganem.n27/videos/1254851935997218/&show_text=false&autoplay=false" allowfullscreen></iframe>
         <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/mostaganem.n27/videos/559093737268230/&show_text=false&autoplay=false" allowfullscreen></iframe>
         <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/mostaganem.n27/videos/1233708521828256/&show_text=false&autoplay=false" allowfullscreen></iframe>
         <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/mostaganem.n27/videos/555187994317005/&show_text=false&autoplay=false" allowfullscreen></iframe>
 
-        <!-- فيديوهات Imgur بنفس الحجم والشكل -->
-        <video controls>
-          <source src="https://i.imgur.com/Oe2qyYi.mp4" type="video/mp4">
-        </video>
-        <video controls>
-          <source src="https://i.imgur.com/Dcu4M0j.mp4" type="video/mp4">
-        </video>
-        <video controls>
-          <source src="https://i.imgur.com/Ct9mobE.mp4" type="video/mp4">
-        </video>
-        <video controls>
-          <source src="https://i.imgur.com/gaLDyRt.mp4" type="video/mp4">
-        </video>
-        <video controls>
-          <source src="https://i.imgur.com/ySuf0p6.mp4" type="video/mp4">
-        </video>
-
+        <!-- الفيديوهات الجديدة من Imgur -->
+        <video controls src="https://i.imgur.com/Oe2qyYi.mp4"></video>
+        <video controls src="https://i.imgur.com/Dcu4M0j.mp4"></video>
+        <video controls src="https://i.imgur.com/Ct9mobE.mp4"></video>
+        <video controls src="https://i.imgur.com/gaLDyRt.mp4"></video>
+        <video controls src="https://i.imgur.com/ySuf0p6.mp4"></video>
       </div>
     </div>
 
-    <!-- عبارة ترحيبية -->
     <div class="footer-banner">
       🎺 GROUPE KARKABOU MOSTAGANEM 🎺<br>
       ✨❤️ BIENVENUE ❤️✨<br>
-      <div class="phone-number" dir="ltr">📞☎️ 07 95 46 81 27 ☎️📞</div>
+      📞☎️ 07 95 46 81 27 ☎️📞
     </div>
 
-    <!-- رقم الهاتف في الأسفل -->
-    <div id="contact" class="phone-number bottom" dir="ltr">📞☎️ 07 95 46 81 27 ☎️📞</div>
-
+    <div id="contact" class="phone-number">📞☎️ 07 95 46 81 27 ☎️📞</div>
   </section>
 
-  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
