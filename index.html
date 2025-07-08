@@ -7,6 +7,25 @@
   <title>9ar9abou Mostaganem</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="https://i.imgur.com/hXnoWXD.jpeg" type="image/jpeg" />
+  <style>
+    .video-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .video-grid iframe,
+    .video-grid video {
+      width: 300px;
+      height: 168.75px; /* 16:9 ratio */
+      border-radius: 12px;
+    }
+    .phone-number {
+      text-align: center;
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -62,7 +81,7 @@
         <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/mostaganem.n27/videos/1233708521828256/&show_text=false&autoplay=false" allowfullscreen></iframe>
         <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/mostaganem.n27/videos/555187994317005/&show_text=false&autoplay=false" allowfullscreen></iframe>
 
-        <!-- فيديوهات Imgur الجديدة -->
+        <!-- فيديوهات Imgur بنفس الحجم والشكل -->
         <video controls>
           <source src="https://i.imgur.com/Oe2qyYi.mp4" type="video/mp4">
         </video>
@@ -78,7 +97,7 @@
         <video controls>
           <source src="https://i.imgur.com/ySuf0p6.mp4" type="video/mp4">
         </video>
-        
+
       </div>
     </div>
 
@@ -86,7 +105,7 @@
     <div class="footer-banner">
       🎺 GROUPE KARKABOU MOSTAGANEM 🎺<br>
       ✨❤️ BIENVENUE ❤️✨<br>
-      <div dir="ltr">📞☎️ 07 95 46 81 27 ☎️📞</div>
+      <div class="phone-number" dir="ltr">📞☎️ 07 95 46 81 27 ☎️📞</div>
     </div>
 
     <!-- رقم الهاتف في الأسفل -->
