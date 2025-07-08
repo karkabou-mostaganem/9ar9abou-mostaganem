@@ -96,6 +96,8 @@ nav ul {
   border-radius: 12px;
   font-weight: bold;
   width: fit-content;
+  display: block;
+  text-align: center;
 }
 .phone-number.bottom {
   margin-top: 50px;
