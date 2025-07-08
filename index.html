@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="sRdcvQ5g9FQj5dFPFwP2cF_sdgsV_a3-k8mLNAWk-4s" />
   <title>9ar9abou Mostaganem</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="https://i.imgur.com/hXnoWXD.jpeg" type="image/jpeg" />
@@ -11,26 +10,34 @@
     .video-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
       justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
     }
     .video-grid iframe,
     .video-grid video {
-      width: 300px;
-      height: 533px;
-      border-radius: 12px;
+      width: 350px;
+      height: 620px;
+      border-radius: 10px;
+    }
+    .footer-banner {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      margin: 20px auto;
+      border-radius: 15px;
+      max-width: 800px;
     }
     .phone-number {
-      direction: ltr;
       text-align: center;
-      font-weight: bold;
-      margin: 10px 0;
+      font-size: 20px;
+      margin: 10px auto;
     }
   </style>
 </head>
 <body>
   <button id="toggleMode">🌓 تبديل الوضع</button>
-
   <header>
     <img src="https://i.imgur.com/hXnoWXD.jpeg" alt="شعار قرقابو" class="logo" />
     <nav>
@@ -44,7 +51,7 @@
   </header>
 
   <section id="home" class="main-section">
-    <div class="phone-number">📞☎️ 07 95 46 81 27 ☎️📞</div>
+    <div class="phone-number" dir="ltr">📞☎️ 07 95 46 81 27 ☎️📞</div>
 
     <div class="images">
       <img src="https://i.imgur.com/BKHLjZn.jpeg" alt="صورة جديدة 1" />
@@ -56,19 +63,19 @@
     <div class="videos">
       <h2>🎥 فيديوهات من إبداع الفرقة</h2>
       <div class="video-grid">
-        <!-- فيديوهات الفيسبوك -->
+        <!-- فيديوهات Facebook -->
         <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/mostaganem.n27/videos/1300081968387198/&show_text=false&autoplay=false" allowfullscreen></iframe>
         <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/mostaganem.n27/videos/1254851935997218/&show_text=false&autoplay=false" allowfullscreen></iframe>
         <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/mostaganem.n27/videos/559093737268230/&show_text=false&autoplay=false" allowfullscreen></iframe>
         <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/mostaganem.n27/videos/1233708521828256/&show_text=false&autoplay=false" allowfullscreen></iframe>
         <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/mostaganem.n27/videos/555187994317005/&show_text=false&autoplay=false" allowfullscreen></iframe>
 
-        <!-- الفيديوهات الجديدة من Imgur -->
-        <video controls src="https://i.imgur.com/Oe2qyYi.mp4"></video>
-        <video controls src="https://i.imgur.com/Dcu4M0j.mp4"></video>
-        <video controls src="https://i.imgur.com/Ct9mobE.mp4"></video>
-        <video controls src="https://i.imgur.com/gaLDyRt.mp4"></video>
-        <video controls src="https://i.imgur.com/ySuf0p6.mp4"></video>
+        <!-- فيديوهات Imgur -->
+        <video controls><source src="https://i.imgur.com/Oe2qyYi.mp4" type="video/mp4"></video>
+        <video controls><source src="https://i.imgur.com/Dcu4M0j.mp4" type="video/mp4"></video>
+        <video controls><source src="https://i.imgur.com/Ct9mobE.mp4" type="video/mp4"></video>
+        <video controls><source src="https://i.imgur.com/gaLDyRt.mp4" type="video/mp4"></video>
+        <video controls><source src="https://i.imgur.com/ySuf0p6.mp4" type="video/mp4"></video>
       </div>
     </div>
 
@@ -78,9 +85,10 @@
       📞☎️ 07 95 46 81 27 ☎️📞
     </div>
 
-    <div id="contact" class="phone-number">📞☎️ 07 95 46 81 27 ☎️📞</div>
+    <div id="contact" class="phone-number" dir="ltr">📞☎️ 07 95 46 81 27 ☎️📞</div>
   </section>
 
   <script src="script.js"></script>
 </body>
 </html>
+
